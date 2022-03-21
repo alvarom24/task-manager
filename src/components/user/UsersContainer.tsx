@@ -40,6 +40,7 @@ export function UsersContainer(): React.ReactElement {
 
     setCurrentTasks(userTasks as unknown as Task[]);
     handleUserSelection(parseInt(userId as string));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userId]);
 
   return (
